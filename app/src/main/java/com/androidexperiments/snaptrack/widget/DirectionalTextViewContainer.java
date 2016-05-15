@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker.widget;
+package com.androidexperiments.snaptrack.widget;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -14,9 +14,10 @@ import android.view.WindowManager;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
+import android.widget.TextView;
 
 import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.landmarker.data.NearbyPlace;
+import com.androidexperiments.snaptrack.data.NearbyPlace;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -43,6 +44,9 @@ public class DirectionalTextViewContainer extends FrameLayout
     @InjectView(R.id.dtv_east) DirectionalTextView mEast;
     @InjectView(R.id.dtv_south) DirectionalTextView mSouth;
     @InjectView(R.id.dtv_west) DirectionalTextView mWest;
+
+    @InjectView(R.id.heading)
+    TextView headingTV;
 
     ArrayList<NearbyPlace> mNorthernPlaces, mEasternPlaces, mSouthernPlaces, mWesternPlaces;
 
@@ -241,6 +245,8 @@ public class DirectionalTextViewContainer extends FrameLayout
             mViewWidth = mEast.getWidth();
 
 //        mCurrentDegrees = degrees;
+
+        headingTV.setText(Double.toString(degrees));
 
         //180 north 0 south 270 east 90 west
         float DEGREE = 90.f;

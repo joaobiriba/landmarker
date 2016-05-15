@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.androidexperiments.landmarker.widget.IntroView
+<com.androidexperiments.snaptrack.widget.IntroView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -22,7 +22,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:layout_gravity="center"
-                android:background="@drawable/intro_compass_spin"/>
+                android:background="@drawable/iopointer"/>
 
         </FrameLayout>
 
@@ -41,4 +41,4 @@
     </RelativeLayout>
 
 
-</com.androidexperiments.landmarker.widget.IntroView>
+</com.androidexperiments.snaptrack.widget.IntroView>

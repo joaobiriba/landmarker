@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.androidexperiments.landmarker.sensors;
+package com.androidexperiments.snaptrack.sensors;
 
 import android.content.Context;
 import android.hardware.Sensor;
@@ -368,7 +368,7 @@ public class HeadTracker implements SensorEventListener {
         }
         if (rotation != displayRotation) {
             displayRotation = rotation;
-            Matrix.setRotateEulerM(sensorToDisplay, 0, 0, 0, -rotation);
+            Matrix.setRotateEulerM(sensorToDisplay, 0, 90, 90, -rotation);
             Matrix.setRotateEulerM(ekfToHeadTracker, 0, -90, 0, rotation);
         }
 

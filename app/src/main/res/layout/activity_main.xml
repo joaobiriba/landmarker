@@ -1,7 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/black" tools:context=".MainActivity">
+    android:background="#87E293" tools:context=".MainActivity">
 
     <include
         layout="@layout/view_intro"
@@ -15,11 +15,20 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
 
-    <com.androidexperiments.landmarker.widget.DirectionalTextViewContainer
+
+
+    <com.androidexperiments.snaptrack.widget.DirectionalTextViewContainer
         android:id="@+id/directional_text_view_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/heading"
+            android:textColor="#FF0000"
+            android:gravity="center"
+            android:text="AAA"/>
         <include
             layout="@layout/view_directional_text_view"
             android:id="@+id/dtv_north"
@@ -44,7 +53,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"/>
 
-    </com.androidexperiments.landmarker.widget.DirectionalTextViewContainer>
+    </com.androidexperiments.snaptrack.widget.DirectionalTextViewContainer>
 
     <FrameLayout
         android:id="@+id/maps_button_view_container"

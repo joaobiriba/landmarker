@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker.widget;
+package com.androidexperiments.snaptrack.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;

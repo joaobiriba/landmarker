@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker;
+package com.androidexperiments.snaptrack;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;

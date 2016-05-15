@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker;
+package com.androidexperiments.snaptrack;
 
 import android.app.Application;
 import android.util.Log;

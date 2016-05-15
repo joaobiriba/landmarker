@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.androidexperiments.landmarker.util;
+package com.androidexperiments.snaptrack.util;
 
 import android.opengl.Matrix;
 

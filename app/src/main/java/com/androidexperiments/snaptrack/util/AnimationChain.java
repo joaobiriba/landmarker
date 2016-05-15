@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker.util;
+package com.androidexperiments.snaptrack.util;
 
 import android.app.Activity;
 import android.app.Fragment;

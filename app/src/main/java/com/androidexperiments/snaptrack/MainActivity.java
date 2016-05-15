@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker;
+package com.androidexperiments.snaptrack;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -29,15 +29,16 @@ import com.google.android.gms.location.LocationSettingsRequest;
 import com.google.android.gms.location.LocationSettingsResult;
 import com.google.android.gms.location.LocationSettingsStatusCodes;
 import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.landmarker.data.NearbyPlace;
-import com.androidexperiments.landmarker.sensors.HeadTracker;
-import com.androidexperiments.landmarker.util.HeadTransform;
-import com.androidexperiments.landmarker.widget.DirectionalTextViewContainer;
-import com.androidexperiments.landmarker.widget.IntroView;
-import com.androidexperiments.landmarker.widget.SwingPhoneView;
+import com.androidexperiments.snaptrack.data.NearbyPlace;
+import com.androidexperiments.snaptrack.sensors.HeadTracker;
+import com.androidexperiments.snaptrack.util.HeadTransform;
+import com.androidexperiments.snaptrack.widget.DirectionalTextViewContainer;
+import com.androidexperiments.snaptrack.widget.IntroView;
+import com.androidexperiments.snaptrack.widget.SwingPhoneView;
 
 import java.io.UnsupportedEncodingException;
 import java.net.URLEncoder;
+import java.util.LinkedList;
 import java.util.List;
 
 import butterknife.ButterKnife;
@@ -55,11 +56,11 @@ public class MainActivity extends BaseActivity implements
     private static final String TAG = MainActivity.class.getSimpleName();
 
     //go to https://code.google.com/apis/console to register an app and get a key!
-    private static final String PLACES_API_KEY = Secrets.PLACES_API_KEY;
+    private static final String PLACES_API_KEY = "AIzaSyAAkrlC3TfTJ5HCyORSPafyj3em_4cJLJ8";
 
     private static final String STATE_RESOLVING_ERROR = "resolving_error";
 
-    private static final double MAX_RADIUS = 1000;
+    private static final double MAX_RADIUS = 50000;
 
     private static final int REQUEST_CHECK_SETTINGS = 100;
 
@@ -485,8 +486,9 @@ public class MainActivity extends BaseActivity implements
                             Toast.LENGTH_LONG
                     ).show();
 
-                    goBackToSplash();
-                    return;
+               //     goBackToSplash();
+               //     return;
+                    places = new LinkedList<Place>();
                 }
 
                 mHasPlaces = true;
@@ -540,6 +542,7 @@ public class MainActivity extends BaseActivity implements
     private Runnable updateDirectionalTextView = new Runnable() {
         @Override
         public void run() {
+            Log.d(TAG, "run: Euler Angles " + mEulerAngles[0] + " " + mEulerAngles[1] + " " + mEulerAngles[2]);
             mDirectionalTextViewContainer.updateView(Math.toDegrees(mEulerAngles[1]));
         }
     };

@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker.widget;
+package com.androidexperiments.snaptrack.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -14,7 +14,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.landmarker.util.SimpleAnimationListener;
+import com.androidexperiments.snaptrack.util.SimpleAnimationListener;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker.widget;
+package com.androidexperiments.snaptrack.widget;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -11,7 +11,7 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 
 import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.landmarker.data.NearbyPlace;
+import com.androidexperiments.snaptrack.data.NearbyPlace;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker.widget;
+package com.androidexperiments.snaptrack.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.androidexperiments.landmarker.sensors;
+package com.androidexperiments.snaptrack.sensors;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;

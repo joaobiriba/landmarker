@@ -1,4 +1,4 @@
-package com.androidexperiments.landmarker;
+package com.androidexperiments.snaptrack;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -17,9 +17,9 @@ import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
 import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.landmarker.util.AnimationChain;
-import com.androidexperiments.landmarker.util.SimpleAnimationListener;
-import com.androidexperiments.landmarker.widget.TutorialSkylineView;
+import com.androidexperiments.snaptrack.util.AnimationChain;
+import com.androidexperiments.snaptrack.util.SimpleAnimationListener;
+import com.androidexperiments.snaptrack.widget.TutorialSkylineView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;
