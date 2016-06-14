@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.util;
+package io.snapback.magicwhand.util;
 
 import android.app.Activity;
 import android.app.Fragment;

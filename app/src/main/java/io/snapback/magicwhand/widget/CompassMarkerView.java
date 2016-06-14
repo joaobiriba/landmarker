@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.widget;
+package io.snapback.magicwhand.widget;
 
 import android.content.Context;
 import android.graphics.Canvas;
@@ -6,8 +6,7 @@ import android.graphics.Paint;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
-import com.google.creativelabs.androidexperiments.typecompass.R;
-
+import io.snapback.magicwhand.R;
 /**
  * letter and a silly line
  */

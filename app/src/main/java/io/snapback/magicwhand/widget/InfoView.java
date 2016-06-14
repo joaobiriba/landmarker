@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.widget;
+package io.snapback.magicwhand.widget;
 
 import android.content.Context;
 import android.graphics.Paint;
@@ -6,8 +6,6 @@ import android.util.AttributeSet;
 import android.webkit.WebView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-
-import com.google.creativelabs.androidexperiments.typecompass.R;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -23,8 +21,8 @@ import butterknife.OnClick;
  */
 public class InfoView extends RelativeLayout {
 
-    @InjectView(R.id.info_licenses_text_view)    TextView mLicensesTextView;
-    @InjectView(R.id.info_licenses_web_view)    WebView mLicenseWebview;
+    @InjectView(io.snapback.magicwhand.R.id.info_licenses_text_view)    TextView mLicensesTextView;
+    @InjectView(io.snapback.magicwhand.R.id.info_licenses_web_view)    WebView mLicenseWebview;
 
     public InfoView(Context context) {
         super(context);
@@ -49,7 +47,7 @@ public class InfoView extends RelativeLayout {
     }
 
     private void setupWebView() {
-        InputStream is = getResources().openRawResource(R.raw.licenses_landmarker);
+        InputStream is = getResources().openRawResource(io.snapback.magicwhand.R.raw.licenses_landmarker);
         BufferedReader reader = new BufferedReader(new InputStreamReader(is));
         StringBuilder builder = new StringBuilder();
         String line = null;
@@ -73,13 +71,13 @@ public class InfoView extends RelativeLayout {
         mLicensesTextView.setPaintFlags(mLicensesTextView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
     }
 
-    @OnClick(R.id.info_close_btn)
+    @OnClick(io.snapback.magicwhand.R.id.info_close_btn)
     public void onClickClose() {
         this.setVisibility(GONE);
         hideWebView();
     }
 
-    @OnClick(R.id.info_licenses_text_view)
+    @OnClick(io.snapback.magicwhand.R.id.info_licenses_text_view)
     public void onClickLicensesButton() {
         mLicenseWebview.setVisibility(VISIBLE);
     }

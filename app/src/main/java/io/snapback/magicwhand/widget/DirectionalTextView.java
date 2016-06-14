@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.widget;
+package io.snapback.magicwhand.widget;
 
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
@@ -10,8 +10,8 @@ import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.snaptrack.data.NearbyPlace;
+import io.snapback.magicwhand.R;
+import io.snapback.magicwhand.data.NearbyPlace;
 
 import java.util.ArrayList;
 
@@ -34,6 +34,7 @@ public class DirectionalTextView extends FrameLayout
     private static final float MAX_JUMP = 1920.f;
 
     /**
+     * Name of prefs object we are using.
      * Name of prefs object we are using.
      * TODO - if shared prefs used anywhere else, extract and put into constants file
      */

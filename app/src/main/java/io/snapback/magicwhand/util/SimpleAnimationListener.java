@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.util;
+package io.snapback.magicwhand.util;
 
 import android.view.animation.Animation;
 

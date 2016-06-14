@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.widget;
+package io.snapback.magicwhand.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -13,8 +13,8 @@ import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.snaptrack.util.SimpleAnimationListener;
+import io.snapback.magicwhand.R;
+import io.snapback.magicwhand.util.SimpleAnimationListener;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

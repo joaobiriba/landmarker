@@ -1,5 +1,5 @@
-<resources>
-    <string name="app_name">SnapTrack</string>
+<resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
+    <string name="app_name">Magic wHand</string>
 
     <string name="intro_finding_you">Finding you!</string>
     <string name="intro_finding_places">Finding places!</string>
@@ -12,4 +12,8 @@
 
     <string name="about_app">Landmarker was created by Anthony Tripaldi at the Google Creative Lab. Go to androidexperiments.com to see other experiments.</string>
     <string name="about_github">Code is open sourced and can be found at\nhttps://github.com/googlecreativelab/landmarker</string>
+
+    <string name="confidence">Confidence: <xliff:g id="confidence_value">%s</xliff:g></string>
+    <string name="heading">Heading: <xliff:g id="heading_value">%.4f</xliff:g></string>
+
 </resources>

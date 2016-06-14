@@ -1,14 +1,16 @@
-package com.androidexperiments.snaptrack.data;
+package io.snapback.magicwhand.data;
 
 import android.location.Location;
 
 import java.util.List;
 
+import io.snapback.magicwhand.widget.DirectionalTextViewContainer;
+
 /**
  * Nearby place with the name (used for maps and display) and the
  * distance to that place, calculated against our current {@link Location}
  *
- * @see com.androidexperiments.snaptrack.widget.DirectionalTextViewContainer#updatePlaces(List, Location)
+ * @see DirectionalTextViewContainer#updatePlaces(List, Location)
  */
 public class NearbyPlace
 {

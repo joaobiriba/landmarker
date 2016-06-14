@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack;
+package io.snapback.magicwhand;
 
 import android.content.Context;
 import android.support.v7.app.AppCompatActivity;

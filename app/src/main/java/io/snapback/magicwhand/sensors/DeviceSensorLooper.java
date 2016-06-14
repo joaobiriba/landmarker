@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.androidexperiments.snaptrack.sensors;
+package io.snapback.magicwhand.sensors;
 
 import android.hardware.Sensor;
 import android.hardware.SensorEvent;

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="snapgreen" type="color">#87E293</item>
+    <item name="snapred" type="color">#FF0093</item>
+    <item name="white" type="color">#FFFFFF</item>
+</resources>

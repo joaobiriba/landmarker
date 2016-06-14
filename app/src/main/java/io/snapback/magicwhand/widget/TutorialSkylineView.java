@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.widget;
+package io.snapback.magicwhand.widget;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -10,8 +10,6 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.LinearLayout;
-
-import com.google.creativelabs.androidexperiments.typecompass.R;
 
 /**
  * Scrollable skyline vector
@@ -44,7 +42,7 @@ public class TutorialSkylineView extends LinearLayout
             @Override
             public void onGlobalLayout() {
                 getViewTreeObserver().removeOnGlobalLayoutListener(this);
-                mMaxWidth = (int)getResources().getDimension(R.dimen.tut_full_skyline_width);//TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, , getResources().getDisplayMetrics());
+                mMaxWidth = (int)getResources().getDimension(io.snapback.magicwhand.R.dimen.tut_full_skyline_width);//TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, , getResources().getDisplayMetrics());
                 mWidth = getWidth();
             }
         });

@@ -4,7 +4,7 @@
     android:background="@android:color/black"
     tools:context=".TutorialActivity">
 
-    <com.androidexperiments.snaptrack.widget.TutorialSkylineView
+    <io.snapback.magicwhand.widget.TutorialSkylineView
         android:id="@+id/tut_skyline"
         android:layout_width="match_parent"
         android:layout_height="120dp"
@@ -28,7 +28,7 @@
             android:layout_height="match_parent"
             android:background="@drawable/tut_skyline_4"/>
 
-    </com.androidexperiments.snaptrack.widget.TutorialSkylineView>
+    </io.snapback.magicwhand.widget.TutorialSkylineView>
     
     <FrameLayout
         android:id="@+id/tut_hand_with_phone"

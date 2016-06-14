@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack;
+package io.snapback.magicwhand;
 
 import android.animation.Animator;
 import android.animation.AnimatorListenerAdapter;
@@ -16,10 +16,10 @@ import android.view.animation.AnimationUtils;
 import android.view.animation.DecelerateInterpolator;
 import android.widget.TextView;
 
-import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.snaptrack.util.AnimationChain;
-import com.androidexperiments.snaptrack.util.SimpleAnimationListener;
-import com.androidexperiments.snaptrack.widget.TutorialSkylineView;
+import io.snapback.magicwhand.R;
+import io.snapback.magicwhand.util.AnimationChain;
+import io.snapback.magicwhand.util.SimpleAnimationListener;
+import io.snapback.magicwhand.widget.TutorialSkylineView;
 
 import butterknife.ButterKnife;
 import butterknife.InjectView;

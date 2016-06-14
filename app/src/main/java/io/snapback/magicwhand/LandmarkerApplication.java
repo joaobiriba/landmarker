@@ -1,9 +1,9 @@
-package com.androidexperiments.snaptrack;
+package io.snapback.magicwhand;
 
 import android.app.Application;
 import android.util.Log;
 
-import com.google.creativelabs.androidexperiments.typecompass.R;
+import io.snapback.magicwhand.R;
 
 import uk.co.chrisjenx.calligraphy.CalligraphyConfig;
 

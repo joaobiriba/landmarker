@@ -1,10 +1,9 @@
-package com.androidexperiments.snaptrack;
+package io.snapback.magicwhand;
 
 import android.content.Intent;
 import android.os.Bundle;
 
 import com.crashlytics.android.Crashlytics;
-import com.google.creativelabs.androidexperiments.typecompass.R;
 
 import butterknife.ButterKnife;
 import butterknife.OnClick;
@@ -23,14 +22,14 @@ public class SplashActivity extends BaseActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Fabric.with(this, new Crashlytics());
-        this.setContentView(R.layout.activity_splash);
+        this.setContentView(io.snapback.magicwhand.R.layout.activity_splash);
 
         ButterKnife.inject(this);
 
         //mInfoView.setVisibility(View.GONE);
     }
 
-    @OnClick(R.id.btn_begin)
+    @OnClick(io.snapback.magicwhand.R.id.btn_begin)
     public void onBeginClick()
     {
         Intent intent = new Intent(this, MainActivity.class);

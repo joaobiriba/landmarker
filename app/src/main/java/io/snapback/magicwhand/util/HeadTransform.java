@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.androidexperiments.snaptrack.util;
+package io.snapback.magicwhand.util;
 
 import android.opengl.Matrix;
 

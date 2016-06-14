@@ -1,4 +1,4 @@
-package com.androidexperiments.snaptrack.widget;
+package io.snapback.magicwhand.widget;
 
 import android.content.Context;
 import android.graphics.Point;
@@ -16,8 +16,8 @@ import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.TextView;
 
-import com.google.creativelabs.androidexperiments.typecompass.R;
-import com.androidexperiments.snaptrack.data.NearbyPlace;
+import io.snapback.magicwhand.data.Place;
+import io.snapback.magicwhand.data.NearbyPlace;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +25,6 @@ import java.util.List;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 import de.greenrobot.event.EventBus;
-import se.walkercrou.places.Place;
 
 /**
  * Handles 4 textviews and displays them in NSEW orientation
@@ -40,13 +39,17 @@ public class DirectionalTextViewContainer extends FrameLayout
     private int TOTAL_Y_MOVEMENT = -980;
 
 
-    @InjectView(R.id.dtv_north) DirectionalTextView mNorth;
-    @InjectView(R.id.dtv_east) DirectionalTextView mEast;
-    @InjectView(R.id.dtv_south) DirectionalTextView mSouth;
-    @InjectView(R.id.dtv_west) DirectionalTextView mWest;
+    @InjectView(io.snapback.magicwhand.R.id.dtv_north) DirectionalTextView mNorth;
+    @InjectView(io.snapback.magicwhand.R.id.dtv_east) DirectionalTextView mEast;
+    @InjectView(io.snapback.magicwhand.R.id.dtv_south) DirectionalTextView mSouth;
+    @InjectView(io.snapback.magicwhand.R.id.dtv_west) DirectionalTextView mWest;
 
-    @InjectView(R.id.heading)
+    @InjectView(io.snapback.magicwhand.R.id.heading)
     TextView headingTV;
+
+
+  //  @InjectView(R.id.operaIV)
+  //  ImageView operaImageView;
 
     ArrayList<NearbyPlace> mNorthernPlaces, mEasternPlaces, mSouthernPlaces, mWesternPlaces;
 
@@ -198,7 +201,7 @@ public class DirectionalTextViewContainer extends FrameLayout
             placeLoc.setLatitude(place.getLatitude());
             placeLoc.setLongitude(place.getLongitude());
 
-//            Log.d(TAG, "degrees to " + place.getName() + ": " + lastLocation.bearingTo(placeLoc) + " distance: " + lastLocation.distanceTo(placeLoc));
+            Log.d(TAG, "degrees to " + place.getName() + ": " + lastLocation.bearingTo(placeLoc) + " distance: " + lastLocation.distanceTo(placeLoc));
 
             float bearing = lastLocation.bearingTo(placeLoc);
             float distance = lastLocation.distanceTo(placeLoc);
@@ -246,7 +249,7 @@ public class DirectionalTextViewContainer extends FrameLayout
 
 //        mCurrentDegrees = degrees;
 
-        headingTV.setText(Double.toString(degrees));
+        headingTV.setText(getContext().getString(io.snapback.magicwhand.R.string.heading, degrees));
 
         //180 north 0 south 270 east 90 west
         float DEGREE = 90.f;
@@ -267,11 +270,14 @@ public class DirectionalTextViewContainer extends FrameLayout
         mSouth.setTranslation(southOffset, mViewWidth);
     }
 
+
+
+
     public void animateIn()
     {
         if(this.getVisibility() == GONE)
         {
-            Animation anim = AnimationUtils.loadAnimation(getContext(), R.anim.show_directional_text_views);
+            Animation anim = AnimationUtils.loadAnimation(getContext(), io.snapback.magicwhand.R.anim.show_directional_text_views);
             this.startAnimation(anim);
             this.setVisibility(VISIBLE);
         }
